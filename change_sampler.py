@@ -23,13 +23,15 @@ import matplotlib
 matplotlib.use("agg")
 import matplotlib.pyplot as plt
 
+# Import sampler
+import neal
+
 # Set the solver we're going to use
 def set_sampler():
     '''Returns a simulated annealing sampler'''
-    
-    ## TODO:  Import packages and add sampler here
+    sampler = neal.SimulatedAnnealingSampler()
 
-    return 
+    return sampler
 
 def create_graph():
     # Create empty graph
